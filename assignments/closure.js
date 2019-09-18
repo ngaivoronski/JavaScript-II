@@ -4,6 +4,12 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+const weeks_in_a_year = 52;
+function time_spent_on_project(weeks) {
+  return `I spent ${weeks} weeks working on this project, which is roughly ` + Math.round(weeks/weeks_in_a_year*100).toString() + `% of the year.`;
+}
+console.log(time_spent_on_project(2));
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
